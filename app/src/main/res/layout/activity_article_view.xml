@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewIntitule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.63" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -48,10 +48,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewIntitule" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewPrix"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="171dp"
@@ -63,10 +63,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewDateAchats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -76,10 +76,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView4" />
+        app:layout_constraintTop_toBottomOf="@id/textViewPrix" />
 
     <RatingBar
-        android:id="@+id/ratingBar"
+        android:id="@+id/ratingBarLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
@@ -87,7 +87,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewDateAchats" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -113,17 +113,17 @@
         app:layout_constraintStart_toEndOf="@+id/imageButton" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textViewUrl"
         android:layout_width="313dp"
         android:layout_height="87dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="71dp"
-        android:text="TextView"
+        android:text="@string/label_desc_article"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+        app:layout_constraintTop_toBottomOf="@+id/ratingBarLevel" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBoxAchete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
@@ -131,7 +131,7 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.952"
-        app:layout_constraintStart_toEndOf="@id/textView5"
-        app:layout_constraintTop_toTopOf="@id/textView4" />
+        app:layout_constraintStart_toEndOf="@id/textViewDateAchats"
+        app:layout_constraintTop_toTopOf="@id/textViewPrix" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

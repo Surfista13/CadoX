@@ -4,6 +4,9 @@ import com.example.cadox.dao.memory.ArticleDAOMemoryImpl
 
 abstract class DAOFactory {
     object Factory{
-        fun createArticleDAO(): ArticleDAO = ArticleDAOMemoryImpl();
+        fun createArticleDAO(type: DAOType) =
+            when(type){
+                DAOType.MEMORY -> ArticleDAOMemoryImpl()
+            }
+        }
     }
-}
