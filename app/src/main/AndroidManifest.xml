@@ -13,10 +13,7 @@
         android:theme="@style/Theme.CadoX"
         tools:targetApi="31">
         <activity
-            android:name=".activity_article_edit_view"
-            android:exported="true" />
-        <activity
-            android:name=".ArticleViewActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+    </application>
 </manifest>
